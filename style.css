@@ -1,0 +1,103 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    font-size: 18px;
+}
+
+.card {
+    margin: 50px auto;
+    max-width: 350px;
+    padding: 24px;
+    border-radius: 15px;
+    background-color: var(--Very-dark-blue-card-BG);
+    box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+              0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+}
+
+.equilibrium {
+    max-width: 340px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p{
+    color: var(--soft-blue);
+}
+.price-timeline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.card-countdown {
+    color: var(--soft-blue);
+}
+hr {
+    padding: 0;
+    border: none;
+    height: .5px;
+    background-color: var(--Very-dark-blue-line);
+}
+
+.avatar {
+    width: 30px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    float: left;
+}
+
+.card-footer {
+    display:   flex;
+    align-items: center;
+}
+
+.card-footer p {
+    margin-left: 23px;
+}
+.card-footer a{
+    color: var(--White);
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+.attribution{
+    padding-top: 20px;
+    text-align: center;
+    color: var(--soft-blue);
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+@media only screen and (max-device-width: 375px) {
+    .card {
+        max-width: 250px;
+    }
+    .equilibrium {
+        max-width: 240px;
+    }
+}
